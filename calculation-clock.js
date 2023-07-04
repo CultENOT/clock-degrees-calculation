@@ -3,7 +3,7 @@
 function clock (hours, minutes) {
     hours = prompt ("Сколько часов?", [10])
     minutes = prompt ("Сколько минут?", [5])
-    if (hours > 24 || minutes > 60 || hours <= 0 || minutes <= -1) {
+    if (hours > 24 || minutes > 60 || hours < 0 || minutes < 0) {
         return false
     } else { 
         if (hours > 12 ) {
